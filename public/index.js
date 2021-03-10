@@ -48,7 +48,7 @@ catch(err){
 let clientId = null;
 let pianoId = null;
 let playerColor = null;
-let ws = new WebSocket("wss:///glacial-shelf-48000.herokuapp.com:8080") //requests a connection (101)
+let ws = new WebSocket("wss://stupid-dodo-58.loca.lt") //requests a connection (101)
 ws.onmessage = message=>{
     const response = JSON.parse(message.data)
     console.log(response)

@@ -4,7 +4,6 @@ const http = require("http");
 const express = require("express")
 const app = express();
 const PORT = process.env.PORT || 9090;
-const PORT_2 = process.env.PORT || 8080;
 
 
 app.use(express.static('public'))
@@ -144,7 +143,8 @@ httpServer.listen(8080, ()=>{
   console.log("listening on 8080")
 })
 
+
 //! Express server
-app.listen(PORT,()=>{
-  console.log("listening on " + PORT)
+app.listen(9090,()=>{
+  console.log("listening on 9090")
 })
